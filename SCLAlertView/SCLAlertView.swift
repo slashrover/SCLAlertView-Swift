@@ -87,7 +87,7 @@ public class SCLAlertView: UIViewController {
     
     // Font
     let kDefaultFont = "AvenirNext-Regular"
-    let kButtonFont = "AvenirNext-Bold"
+    let kButtonFont = "AvenirNext-Medium"
     
     // UI Colour
     var viewColor = UIColor()
@@ -470,7 +470,7 @@ public class SCLAlertView: UIViewController {
         
         // Done button
         if showCloseButton {
-            let txt = completeText != nil ? completeText! : "Done"
+            let txt = completeText != nil ? completeText! : "Cancel"
             addButton(txt, target:self, selector:Selector("hideView"))
         }
         
