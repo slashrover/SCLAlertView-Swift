@@ -80,8 +80,8 @@ public class SCLAlertView: UIViewController, UITextFieldDelegate {
     let kButtonHeight: CGFloat = 45.0
     
     // Font
-    let kDefaultFont = "HelveticaNeue"
-    let kButtonFont = "HelveticaNeue-Bold"
+    let kDefaultFont = "AvenirNext-Regular"
+    let kButtonFont = "AvenirNext-Bold"
     
     // UI Colour
     var viewColor = UIColor()
@@ -320,7 +320,7 @@ public class SCLAlertView: UIViewController, UITextFieldDelegate {
     }
     
     // showError(view, title, subTitle)
-    public func showError(title: String, subTitle: String, closeButtonTitle:String?=nil, duration:NSTimeInterval=0.0, colorStyle: UInt=0xC1272D, colorTextButton: UInt=0xFFFFFF) -> SCLAlertViewResponder {
+    public func showError(title: String, subTitle: String, closeButtonTitle:String?=nil, duration:NSTimeInterval=0.0, colorStyle: UInt=0xF43767, colorTextButton: UInt=0xFFFFFF) -> SCLAlertViewResponder {
         return showTitle(title, subTitle: subTitle, duration: duration, completeText:closeButtonTitle, style: .Error, colorStyle: colorStyle, colorTextButton: colorTextButton)
     }
     

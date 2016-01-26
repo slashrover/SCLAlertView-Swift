@@ -86,8 +86,8 @@ public class SCLAlertView: UIViewController {
     let kButtonHeight: CGFloat = 45.0
     
     // Font
-    let kDefaultFont = "HelveticaNeue"
-    let kButtonFont = "HelveticaNeue-Bold"
+    let kDefaultFont = "AvenirNext-Regular"
+    let kButtonFont = "AvenirNext-Bold"
     
     // UI Colour
     var viewColor = UIColor()
@@ -372,7 +372,7 @@ public class SCLAlertView: UIViewController {
     }
     
     // showError(view, title, subTitle)
-    public func showError(title: String, subTitle: String, closeButtonTitle:String?=nil, duration:NSTimeInterval=0.0, colorStyle: UInt=0xC1272D, colorTextButton: UInt=0xFFFFFF, circleIconImage: UIImage? = nil) -> SCLAlertViewResponder {
+    public func showError(title: String, subTitle: String, closeButtonTitle:String?=nil, duration:NSTimeInterval=0.0, colorStyle: UInt=0xF43767, colorTextButton: UInt=0xFFFFFF, circleIconImage: UIImage? = nil) -> SCLAlertViewResponder {
         return showTitle(title, subTitle: subTitle, duration: duration, completeText:closeButtonTitle, style: .Error, colorStyle: colorStyle, colorTextButton: colorTextButton, circleIconImage: circleIconImage)
     }
     
@@ -387,7 +387,7 @@ public class SCLAlertView: UIViewController {
     }
     
     // showInfo(view, title, subTitle)
-    public func showInfo(title: String, subTitle: String, closeButtonTitle:String?=nil, duration:NSTimeInterval=0.0, colorStyle: UInt=0x2866BF, colorTextButton: UInt=0xFFFFFF, circleIconImage: UIImage? = nil) -> SCLAlertViewResponder {
+    public func showInfo(title: String, subTitle: String, closeButtonTitle:String?=nil, duration:NSTimeInterval=0.0, colorStyle: UInt=0xF43767, colorTextButton: UInt=0xFFFFFF, circleIconImage: UIImage? = nil) -> SCLAlertViewResponder {
         return showTitle(title, subTitle: subTitle, duration: duration, completeText:closeButtonTitle, style: .Info, colorStyle: colorStyle, colorTextButton: colorTextButton, circleIconImage: circleIconImage)
     }
     
